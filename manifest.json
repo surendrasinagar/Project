@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "AFF",
+    "version": "1.0",
+    "description": "Automatic Form Filling",
+    "icons": {
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon128.png",
+        "default_popup": "popup.html",
+        "default_title": "project"
+    },
+    "content_scripts":[
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "css":[
+                "style.css"
+            ]
+            
+        }
+    ],
+    "permissions": [
+        "http://localhost/*",
+        "activeTab"
+    ]
+}
